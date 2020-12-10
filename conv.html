@@ -33,7 +33,18 @@ This is some content.</p>
 </newLocation>
 </redirect>
 <p>
-<input type="submit" value="Submit" name="conversion_form_submit">
+<p>Enter names in the fields, then click "Submit" to submit the form:</p>
 
+<form id="conversion_form_submit" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+  document.getElementById("conversion_form_submit").submit();
+}
+</script>
 </body>
 </html>
