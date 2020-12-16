@@ -30,7 +30,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <input type="submit" value="Submit">
 </form>
   
-  
+  <!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<form name="myform" method="post" action="">
+	<input name="row_password" type="text" size="40">
+	<input type="button" class="button" value="Generate" onClick="randomPassword(10);" tabindex="2">
+</form>
+<script>
+function randomPassword(length) {
+    var chars = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>ABCDEFGHIJKLMNOP1234567890";
+    var pass = "";
+    for (var x = 0; x < length; x++) {
+        var i = Math.floor(Math.random() * chars.length);
+        pass += chars.charAt(i);
+    }
+    myform.row_password.value = pass;
+}
+</script>
+</body>
+</html>
   
 
 </body>
