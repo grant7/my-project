@@ -34,16 +34,19 @@ This is some content.</p>
 </redirect>
 <p>
 <p>Enter names in the fields, then click "Submit" to submit the form:</p>
-  <script>
-
-
-    var ID = function () {
-  // Math.random should be unique because of its seeding algorithm.
-  // Convert it to base 36 (numbers + letters), and grab the first 9 characters
-  // after the decimal.
-  return '_' + Math.random().toString(36).substr(2, 9);
-}
-      </script>
+  
+  
+  
+  
+<script>
+document.getElementById("demo").innerHTML = Math.random();
+</script>
+  
+  
+  
+  
+  
+  
 <form action="/action_page.php" id="grants form id">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
