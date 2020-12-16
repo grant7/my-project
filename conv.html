@@ -38,11 +38,12 @@ This is some content.</p>
   
   
   
-
+<p id="id"></p>
+<script>
+document.getElementById("id").innerHTML = Math.floor(Math.random() * 1000);
+</script>
   
-  
-  
-  
+ 
   
 <form action="/action_page.php" id="grants form id">
   <label for="fname">First name:</label><br>
@@ -53,10 +54,7 @@ This is some content.</p>
   <input type="text" id="id" name="id" value="id"><br><br>
 </form> 
 
-<p id="id"></p>
-<script>
-document.getElementById("id").innerHTML = Math.floor(Math.random() * 1000);
-</script>
+
   
   
 
